@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>OLX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+        <div class="row" style="padding-top:20px;">
+            <div class="top col-12">
+                <span><img src="images/OLX_2019.svg.png" width="40px" alt=""></span>
+                <span class="carAndtext"><i class="fa-solid fa-car"></i><b>MOTORS</b></span>
+                <span class="carAndtext"><i class="fa-solid fa-building"></i><b>PROPERTY</b></span>
+
+            </div>
+        </div>
+        <br>
+        <div class="row" >
+            <!-- <div class="nav col-12"> -->
+            <div class=" col-md-4 col-sm-12" ><img src="images/olx-logo.png" width="60px"
+                    alt="" />
+                <!-- <label for="cars">Choose a car:</label> -->
+
+                <select name="country" id="ccountryars" style="width:310px; height:48px; margin-left: 20px; background-color: white; border-radius:5px; ">
+                    <option value="volvo">Pakistan</option>
+                    <option value="saab"> Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+            <div class=" inp col-md-6 col-sm-12" > <input
+                    style="width:88%; height:48px; margin-left: 0px; background-color: white; border-radius: 5px; " type="text"
+                    placeholder="Find Cars, Mobile Phones and more..."><i
+                    style="color: white; background-color: black; border-radius: 5px; font-size: 20px; margin-left: 1px; padding: 14px; text-align: center;"
+                    class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="login col-md-2 col-sm-12"><a href="">Login</a><a href=""><img
+                        src="images/plus.png" width="90px" alt=""></a></div>
+            <!-- </div> -->
+            <div class="afternav col-md-12 col-sm-12">
+                <ul>
+                    <li><a href="">ALL CATEGORIES &nbsp <img src="images/arrow.svg" alt=""></a></li>
+                    <li><a href="">Mobile Phone</a></li>
+                    <li><a href="">Cars</a></li>
+                    <li><a href="">Motorcycle</a></li>
+                    <li><a href="">Houses</a></li>
+                    <li><a href="">TV-Video-Audio</a></li>
+                    <li><a href="">Tables</a></li>
+                    <li><a href="">Land & Plots</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- =========================== Slider ====================== -->
+        <div class="row pt-3">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/1stslider.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/1stslider.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <!-- <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div> -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- ======================== Products Area =================== -->
+        <div class="container">
+        <!-- <div class="row pt-4">
+            <h1 style="font-size: 25px;">Fresh recommendations</h1>
+            <div class="pt-3">
+
+            <div class=" col-md-3 col-sm-6">
+                <div>
+                    <div class="pimg">
+                        <img src="images/pimg.jpeg"  height="150px" alt="">
+                    </div>
+                    <div class="title">
+                        <p>
+                            7 Seater Sofa Set, only used for few months
+                        </p>
+                        <span>
+                            <b>Rs: 19,900</b>
+                        </span>
+                        <br><br>
+                        <span>
+                            Ali Town, lahore . 1 minute ago
+                        </span>
+                    </div>
+                   
+                    <div class="icons">
+                        
+                        <i class="fa-solid fa-heart"></i>   
+                        <br>
+                        <br><br><br><br>
+                    </div>
+                 </div>
+                 
+            </div>
+            <div class=" col-md-3 col-sm-6">
+                <div>
+                    <div class="pimg">
+                        <img src="images/pimg.jpeg"  height="150px" alt="">
+                    </div>
+                    <div class="title">
+                        <p>
+                            7 Seater Sofa Set, only used for few months
+                        </p>
+                        <span>
+                            <b>Rs: 19,900</b>
+                        </span>
+                        <br><br>
+                        <span>
+                            Ali Town, lahore . 1 minute ago
+                        </span>
+                    </div>
+                   
+                    <div class="icons">
+                        
+                        <i class="fa-solid fa-heart"></i>   
+                        <br>
+                        <br><br><br><br>
+                    </div>
+                 </div>
+                 
+            </div>
+                
+                
+                
+           
+
+            </div>
+            
+        </div> -->
+        <h1 class="mt-5" style="font-size: 25px;">Fresh recommendations</h1>
+        <div class="row row-cols-2 row-cols-md-3 g-2 mt-1">
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <div style="text-align:center; background-color:black; "><img src="images/pimg.jpeg" width="120px"
+                            alt="..."></div>
+                    <div class="card-body">
+                        <!-- <p class="card-text" style="font-size: 14px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                        <!-- <span style="margin-left: 50px; font-size: 15px;"><i class="fa-solid fa-heart"></i></span> -->
+                        <div class="a">
+                            <p>Changa Karwaan Plus Mini Abbulance </p>
+                        </div>
+                        <div class="b"><span style="margin-left: 50px; font-size: 18px;"><i
+                                    class="fa-solid fa-heart"></i></span>
+                            <br><br><br><br>
+                        </div>
+                        <h3 class="card-title">Rs: 3,250,00</h3>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" style="font-size: 12px;">DHA Phase 8 Karachi . 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <div style="text-align:center; background-color:black; "><img src="images/pimgiphone.jpeg"
+                            width="160px" alt="..."></div>
+                    <div class="card-body">
+                        <!-- <p class="card-text" style="font-size: 14px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                        <!-- <span style="margin-left: 50px; font-size: 15px;"><i class="fa-solid fa-heart"></i></span> -->
+                        <div class="a">
+                            <p>iPhone Xs 64GB And 256GB 4 Months Sim Will WorkPack Stock <br><br> </p>
+                        </div>
+                        <div class="b"><span style="margin-left: 50px; font-size: 18px;"><i
+                                    class="fa-solid fa-heart"></i></span>
+                            <br><br><br><br>
+                        </div>
+                        <h3 class="card-title">Rs: 56,000</h3>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" style="font-size: 12px;">Township, Lahore . 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <div style="text-align:center; background-color:black; "><img src="images/bike.jpeg" width="90px"
+                            alt="..."></div>
+                    <div class="card-body">
+                        <!-- <p class="card-text" style="font-size: 14px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                        <!-- <span style="margin-left: 50px; font-size: 15px;"><i class="fa-solid fa-heart"></i></span> -->
+                        <div class="a">
+                            <p>Hi Speed SR 150cc infinity cafe racer bull better then suzuki gs ... </p>
+                        </div>
+                        <div class="b"><span style="margin-left: 50px; font-size: 18px;"><i
+                                    class="fa-solid fa-heart"></i></span>
+                            <br><br><br><br>
+                        </div>
+                        <h3 class="card-title">Rs: 295,000</h3>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" style="font-size: 12px;">Township - Sector B2, Lahore . 1 week
+                            ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <div style="text-align:center; background-color:black; "><img src="images/pimgbuilding.jpeg"
+                            width="120px" alt="..."></div>
+                    <div class="card-body">
+                        <!-- <p class="card-text" style="font-size: 14px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                        <!-- <span style="margin-left: 50px; font-size: 15px;"><i class="fa-solid fa-heart"></i></span> -->
+                        <div class="a">
+                            <p>BED SET IN shesham Polish with side tables & Dressing table </p>
+                        </div>
+                        <div class="b"><span style="margin-left: 50px; font-size: 18px;"><i
+                                    class="fa-solid fa-heart"></i></span>
+                            <br><br><br><br>
+                        </div>
+                        <h3 class="card-title">Rs: 24,000</h3>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" style="font-size: 12px;">Cantt, Lahore . 4 week ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <div style="text-align:center; background-color:black; "><img src="images/pimghiroof.jpeg"
+                            width="105px" alt="..."></div>
+                    <div class="card-body">
+                        <!-- <p class="card-text" style="font-size: 14px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                        <!-- <span style="margin-left: 50px; font-size: 15px;"><i class="fa-solid fa-heart"></i></span> -->
+                        <div class="a">
+                            <p>Suzuki Bolan 2021 <br><br> <br><br></p>
+                        </div>
+                        <div class="b"><span style="margin-left: 50px; font-size: 18px;"><i
+                                    class="fa-solid fa-heart"></i></span>
+                            <br><br><br><br>
+                        </div>
+                        <h3 class="card-title">Rs: 1,280,000</h3>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" style="font-size: 12px;">Defence View Society, Karachi . 1 week
+                            ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <div style="text-align:center; background-color:black; "><img src="images/pimgiphone.jpeg"
+                            width="160px" alt="..."></div>
+                    <div class="card-body">
+                        <!-- <p class="card-text" style="font-size: 14px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                        <!-- <span style="margin-left: 50px; font-size: 15px;"><i class="fa-solid fa-heart"></i></span> -->
+                        <div class="a">
+                            <p>iPhone Xs 64GB And 256GB 4 Months Sim Will WorkPack Stock <br><br> </p>
+                        </div>
+                        <div class="b"><span style="margin-left: 50px; font-size: 18px;"><i
+                                    class="fa-solid fa-heart"></i></span>
+                            <br><br><br><br>
+                        </div>
+                        <h3 class="card-title">Rs: 56,000</h3>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" style="font-size: 12px;">Township, Lahore . 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <div style="text-align:center; background-color:black; "><img src="images/pimgbuilding.jpeg"
+                            width="120px" alt="..."></div>
+                    <div class="card-body">
+                        <!-- <p class="card-text" style="font-size: 14px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                        <!-- <span style="margin-left: 50px; font-size: 15px;"><i class="fa-solid fa-heart"></i></span> -->
+                        <div class="a">
+                            <p>BED SET IN shesham Polish with side tables & Dressing table </p>
+                        </div>
+                        <div class="b"><span style="margin-left: 50px; font-size: 18px;"><i
+                                    class="fa-solid fa-heart"></i></span>
+                            <br><br><br><br>
+                        </div>
+                        <h3 class="card-title">Rs: 24,000</h3>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" style="font-size: 12px;">Cantt, Lahore . 4 week ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <div style="text-align:center; background-color:black; "><img src="images/pimg.jpeg" width="120px"
+                            alt="..."></div>
+                    <div class="card-body">
+                        <!-- <p class="card-text" style="font-size: 14px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                        <!-- <span style="margin-left: 50px; font-size: 15px;"><i class="fa-solid fa-heart"></i></span> -->
+                        <div class="a">
+                            <p>Changa Karwaan Plus Mini Abbulance </p>
+                        </div>
+                        <div class="b"><span style="margin-left: 50px; font-size: 18px;"><i
+                                    class="fa-solid fa-heart"></i></span>
+                            <br><br><br><br>
+                        </div>
+                        <h3 class="card-title">Rs: 3,250,00</h3>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" style="font-size: 12px;">DHA Phase 8 Karachi . 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <div style="text-align:center; background-color:black; "><img src="images/pimg.jpeg" width="120px"
+                            alt="..."></div>
+                    <div class="card-body">
+                        <!-- <p class="card-text" style="font-size: 14px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                        <!-- <span style="margin-left: 50px; font-size: 15px;"><i class="fa-solid fa-heart"></i></span> -->
+                        <div class="a">
+                            <p>Changa Karwaan Plus Mini Abbulance </p>
+                        </div>
+                        <div class="b"><span style="margin-left: 50px; font-size: 18px;"><i
+                                    class="fa-solid fa-heart"></i></span>
+                            <br><br><br><br>
+                        </div>
+                        <h3 class="card-title">Rs: 3,250,00</h3>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" style="font-size: 12px;">DHA Phase 8 Karachi . 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <div style="text-align:center; background-color:black; "><img src="images/pimgiphone.jpeg"
+                            width="160px" alt="..."></div>
+                    <div class="card-body">
+                        <!-- <p class="card-text" style="font-size: 14px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                        <!-- <span style="margin-left: 50px; font-size: 15px;"><i class="fa-solid fa-heart"></i></span> -->
+                        <div class="a">
+                            <p>iPhone Xs 64GB And 256GB 4 Months Sim Will WorkPack Stock <br><br> </p>
+                        </div>
+                        <div class="b"><span style="margin-left: 50px; font-size: 18px;"><i
+                                    class="fa-solid fa-heart"></i></span>
+                            <br><br><br><br>
+                        </div>
+                        <h3 class="card-title">Rs: 56,000</h3>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" style="font-size: 12px;">Township, Lahore . 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <div style="text-align:center; background-color:black; "><img src="images/bike.jpeg" width="90px"
+                            alt="..."></div>
+                    <div class="card-body">
+                        <!-- <p class="card-text" style="font-size: 14px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                        <!-- <span style="margin-left: 50px; font-size: 15px;"><i class="fa-solid fa-heart"></i></span> -->
+                        <div class="a">
+                            <p>Hi Speed SR 150cc infinity cafe racer bull better then suzuki gs ... </p>
+                        </div>
+                        <div class="b"><span style="margin-left: 50px; font-size: 18px;"><i
+                                    class="fa-solid fa-heart"></i></span>
+                            <br><br><br><br>
+                        </div>
+                        <h3 class="card-title">Rs: 295,000</h3>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" style="font-size: 12px;">Township - Sector B2, Lahore . 1 week
+                            ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <div style="text-align:center; background-color:black; "><img src="images/pimgbuilding.jpeg"
+                            width="120px" alt="..."></div>
+                    <div class="card-body">
+                        <!-- <p class="card-text" style="font-size: 14px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                        <!-- <span style="margin-left: 50px; font-size: 15px;"><i class="fa-solid fa-heart"></i></span> -->
+                        <div class="a">
+                            <p>BED SET IN shesham Polish with side tables & Dressing table </p>
+                        </div>
+                        <div class="b"><span style="margin-left: 50px; font-size: 18px;"><i
+                                    class="fa-solid fa-heart"></i></span>
+                            <br><br><br><br>
+                        </div>
+                        <h3 class="card-title">Rs: 24,000</h3>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" style="font-size: 12px;">Cantt, Lahore . 4 week ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <div style="text-align:center; background-color:black; "><img src="images/pimghiroof.jpeg"
+                            width="105px" alt="..."></div>
+                    <div class="card-body">
+                        <!-- <p class="card-text" style="font-size: 14px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                        <!-- <span style="margin-left: 50px; font-size: 15px;"><i class="fa-solid fa-heart"></i></span> -->
+                        <div class="a">
+                            <p>Suzuki Bolan 2021 <br><br> <br><br></p>
+                        </div>
+                        <div class="b"><span style="margin-left: 50px; font-size: 18px;"><i
+                                    class="fa-solid fa-heart"></i></span>
+                            <br><br><br><br>
+                        </div>
+                        <h3 class="card-title">Rs: 1,280,000</h3>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" style="font-size: 12px;">Defence View Society, Karachi . 1 week
+                            ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <div style="text-align:center; background-color:black; "><img src="images/pimgiphone.jpeg"
+                            width="160px" alt="..."></div>
+                    <div class="card-body">
+                        <!-- <p class="card-text" style="font-size: 14px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                        <!-- <span style="margin-left: 50px; font-size: 15px;"><i class="fa-solid fa-heart"></i></span> -->
+                        <div class="a">
+                            <p>iPhone Xs 64GB And 256GB 4 Months Sim Will WorkPack Stock <br><br> </p>
+                        </div>
+                        <div class="b"><span style="margin-left: 50px; font-size: 18px;"><i
+                                    class="fa-solid fa-heart"></i></span>
+                            <br><br><br><br>
+                        </div>
+                        <h3 class="card-title">Rs: 56,000</h3>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" style="font-size: 12px;">Township, Lahore . 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <div style="text-align:center; background-color:black; "><img src="images/pimgbuilding.jpeg"
+                            width="120px" alt="..."></div>
+                    <div class="card-body">
+                        <!-- <p class="card-text" style="font-size: 14px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                        <!-- <span style="margin-left: 50px; font-size: 15px;"><i class="fa-solid fa-heart"></i></span> -->
+                        <div class="a">
+                            <p>BED SET IN shesham Polish with side tables & Dressing table </p>
+                        </div>
+                        <div class="b"><span style="margin-left: 50px; font-size: 18px;"><i
+                                    class="fa-solid fa-heart"></i></span>
+                            <br><br><br><br>
+                        </div>
+                        <h3 class="card-title">Rs: 24,000</h3>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" style="font-size: 12px;">Cantt, Lahore . 4 week ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100">
+                    <div style="text-align:center; background-color:black; "><img src="images/pimg.jpeg" width="120px"
+                            alt="..."></div>
+                    <div class="card-body">
+                        <!-- <p class="card-text" style="font-size: 14px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                        <!-- <span style="margin-left: 50px; font-size: 15px;"><i class="fa-solid fa-heart"></i></span> -->
+                        <div class="a">
+                            <p>Changa Karwaan Plus Mini Abbulance </p>
+                        </div>
+                        <div class="b"><span style="margin-left: 50px; font-size: 18px;"><i
+                                    class="fa-solid fa-heart"></i></span>
+                            <br><br><br><br>
+                        </div>
+                        <h3 class="card-title">Rs: 3,250,00</h3>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted" style="font-size: 12px;">DHA Phase 8 Karachi . 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="loadmore col-12 mt-5">
+                <button>Load more</button>
+            </div>
+    </div>
+            <div class="loadmore col-md-12 col-sm-12 mt-5">
+                <img src="images/8960503734851470694.gif" alt="">
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-4 col-sm-12 mt-3">
+                <img src="images/olx.jpg" width="100%" alt="">
+            </div>
+            <div class=" olx_text col-md-4 col-sm-12 mt-3">
+                <div>Try the OLX app</div>
+                <div class="olx_texttwo">Buy, sell and find just about anything using the app on your mobile.</div>
+                <div class="line"></div>
+            </div>
+            <!-- <div class="_1075545d _96d4439a"><div class="_47cdfee7"></div></div> -->
+            <!-- <div class="_47cdfee7"></div> -->
+
+            <div class="olx_store col-md-4 col-sm-12 mt-3">
+                <br><br>
+                <b>GET YOUR APP TODAY</b>
+                <br>
+                <img src="images/appstore.svg" alt="">
+                <img src="images/googleplay.svg" alt="">
+                <img src="images/huawei.svg" alt="">
+            </div>
+        </div>
+
+    <!-- </div> -->
+    <div class="foo row">
+        <div class="footer">
+            <div class="col-md-2 col-sm-2">
+                <b>POPULAR CATEGORIES</b>
+                <ul>
+                    <li><a href=""></a>Cars</li>
+                    <li><a href=""></a>Flats for rent</li>
+                    <li><a href=""></a>Mobile Phones</li>
+                    <li><a href=""></a>Jobs</li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2">
+                <b>TRENDING SEARCHES</b>
+                <ul>
+                    <li><a href=""></a>Bikes</li>
+                    <li><a href=""></a>Watches</li>
+                    <li><a href=""></a>Books</li>
+                    <li><a href=""></a>Dogs</li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-2">
+                <b>ABOUT US</b>
+                <ul>
+                    <li><a href=""></a>About EMPG</li>
+                    <li><a href=""></a>OLX Blog</li>
+                    <li><a href=""></a>Contact Us</li>
+                    <li><a href=""></a>OLX for Businesses</li>
+                </ul>
+            </div>
+            <div class="olxdiv col-md-2 col-sm-2">
+                <b>OLX</b>
+                <ul>
+                    <li><a href=""></a>Help</li>
+                    <li><a href=""></a>Sitemap</li>
+                    <li><a href=""></a>Terms of use</li>
+                    <li><a href=""></a>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="inline col-md-3 col-sm-3">
+                <b style="font-size:16px">FOLLOW US</b>
+                <ul>
+                    <li><img src="images/facebook.svg" width="25px" alt=""></li>
+                    <li><img src="images/twitter.svg" width="25px" alt=""></li>
+                    <li><img src="images/play.svg" width="25px" alt=""></li>
+                    <li><img src="images/insta.svg" width="25px" alt=""></li>
+                    <br>
+                    <br>
+                    <li><img src="images/appstore.svg" width="80px" alt=""></li>
+                    <li><img src="images/googleplay.svg" width="80px" alt=""></li>
+                    <li><img src="images/huawei.svg" width="80px" alt=""></li>
+                </ul>
+            </div>
+            <br><br><br>
+        </div>
+        <div class="end row">
+            <div class="col-12">
+                <div class="copyright">
+                    <b>Free Classifieds in Pakistan </b> <span>. © 2006-2022 OLXS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
